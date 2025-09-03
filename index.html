@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aposentadoria Blindada - Servidores Públicos do Pará</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .gradient-text {
+      background: linear-gradient(90deg, #a64ca6, #f59ca9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .gradient-bg {
+      background: linear-gradient(90deg, #a64ca6, #f59ca9);
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Header -->
+  <header class="text-pink-600 py-12 text-center px-4 fade-in">
+    <img src="Dados de banco Daniel Gustavo 2.png" alt="Logo Aposentadoria Blindada" class="mx-auto w-full max-w-sm md:max-w-md lg:max-w-lg h-auto mb-4">
+    <p class="text-lg md:text-2xl max-w-3xl mx-auto font-medium">Servidores Públicos do Pará, preparem-se para garantir todos os seus direitos no IGEPREV.</p>
+</header>
+
+  <!-- Subtítulo -->
+  <section class="text-center py-8 px-4 bg-gray-50">
+    <p class="text-base md:text-xl font-medium">Evento <span class="gradient-text font-bold">100% gratuito e presencial</span> em Belém, no dia <strong>25 de setembro</strong>, para você aprender como evitar erros que podem custar anos de trabalho e dinheiro na sua aposentadoria.</p>
+  </section>
+
+  <!-- Seção 1: Chamada rápida -->
+  <section class="bg-white shadow-lg rounded-2xl p-6 md:p-8 max-w-3xl mx-auto text-center mt-8 border border-gray-100">
+    <img src="data.png" alt="Data do evento" class="mx-auto h-[90px] mb-2">
+    <p class="mb-2"><strong>Palestra destinada à</strong> Servidores públicos ativos e inativos do Pará</p>
+    <p class="mb-4 text-pink-600 font-semibold">Vagas limitadas a 1.000 participantes</p>
+    <a href="#formulario" class="gradient-bg text-white px-6 md:px-10 py-3 md:py-4 rounded-full font-semibold text-lg shadow-lg hover:opacity-90 transition block md:inline-block">Quero me inscrever agora</a>
+  </section>
+
+  <!-- Seção 2: Por que participar -->
+  <section class="py-12 md:py-16 px-6 max-w-4xl mx-auto">
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 gradient-text">Por que participar?</h2>
+    <ul class="space-y-4 text-base md:text-lg text-gray-700">
+      <li>✅ Descubra os 3 maiores erros que fazem servidores perderem dinheiro na aposentadoria.</li>
+      <li>✅ Entenda como funciona o cálculo do IGEPREV e como garantir o valor máximo.</li>
+      <li>✅ Saiba quando é a hora certa de se aposentar para não perder progressões.</li>
+      <li>✅ Receba orientações práticas e aplicáveis para seu caso.</li>
+    </ul>
+  </section>
+
+  <!-- Seção 3: Quem vai conduzir -->
+  <section class="bg-gradient-to-r from-purple-50 to-pink-50 py-12 md:py-16 px-6">
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-10 gradient-text">Quem vai conduzir?</h2>
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center md:space-x-8">
+      <img src="https://via.placeholder.com/250" alt="Foto da palestrante" class="rounded-2xl shadow-xl mb-6 md:mb-0 w-40 md:w-64">
+      <div class="text-center md:text-left">
+        <h3 class="text-xl md:text-2xl font-semibold text-purple-800">Priscila Souza</h3>
+        <p class="text-gray-700 leading-relaxed mt-2 text-sm md:text-base">Advogada especialista em Direito Previdenciário e Servidora Pública, com mais de X anos de experiência ajudando servidores a conquistarem a aposentadoria sem perdas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 4: Bônus -->
+  <section class="py-12 md:py-16 px-6 max-w-4xl mx-auto text-center">
+    <h2 class="text-2xl md:text-3xl font-bold mb-8 gradient-text">Bônus para participantes</h2>
+    <ul class="space-y-4 text-base md:text-lg text-gray-700">
+      <li>🎁 Prioridade na agenda para a <strong>Consultoria Aposentadoria Blindada</strong></li>
+      <li>🎁 Condições especiais apenas para quem comparecer ao evento</li>
+    </ul>
+  </section>
+
+  <!-- Seção 5: Formulário -->
+  <section id="formulario" class="bg-gradient-to-r from-purple-700 to-pink-500 py-12 md:py-16 px-4">
+    <h2 class="text-2xl md:text-3xl font-bold text-center mb-8 text-white">Inscreva-se agora</h2>
+    <form id="inscricaoForm" class="max-w-2xl mx-auto bg-white p-6 md:p-8 rounded-2xl shadow-2xl space-y-5">
+      <input type="text" name="nome" placeholder="Nome completo" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-pink-400" required>
+      <input type="email" name="email" placeholder="E-mail" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-pink-400" required>
+      <input type="tel" name="celular" placeholder="Celular (WhatsApp)" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-pink-400" required>
+      <select name="tipo" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-pink-400" required>
+        <option value="">Você é servidor ativo ou aposentado?</option>
+        <option value="ativo">Ativo</option>
+        <option value="aposentado">Aposentado</option>
+      </select>
+      <button type="submit" class="gradient-bg text-white w-full py-3 md:py-4 rounded-full font-semibold text-lg shadow-lg hover:opacity-90 transition">Garanta sua vaga agora</button>
+    </form>
+  </section>
+
+  <!-- Popup WhatsApp -->
+  <div id="popup" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50 px-4">
+    <div class="bg-white rounded-2xl shadow-lg p-6 md:p-8 max-w-md text-center">
+      <h3 class="text-lg md:text-xl font-bold mb-4">Inscrição realizada com sucesso 🎉</h3>
+      <p class="mb-6 text-sm md:text-base">Entre no nosso grupo do WhatsApp para receber todas as informações do evento:</p>
+      <a href="https://chat.whatsapp.com/SEULINK" target="_blank" class="gradient-bg text-white px-4 md:px-6 py-2 md:py-3 rounded-full font-semibold text-base md:text-lg shadow hover:opacity-90 transition block">Entrar no grupo do WhatsApp</a>
+    </div>
+  </div>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-900 text-gray-300 text-center py-8 mt-12 px-4">
+    <p class="mb-2 text-sm md:text-base">Evento gratuito e exclusivo para servidores públicos do Pará.</p>
+    <p class="text-sm md:text-base">Organização: <span class="text-white font-semibold">Priscila Souza Consultoria & Advocacia</span></p>
+  </footer>
+
+  <!-- Script de integração -->
+  <script>
+    const scriptURL = "COLE_AQUI_A_URL_DO_SEU_WEBAPP"; // URL do Google Apps Script
+    const form = document.getElementById("inscricaoForm");
+    const popup = document.getElementById("popup");
+
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+
+      const formData = {
+        nome: form.nome.value,
+        email: form.email.value,
+        celular: form.celular.value,
+        tipo: form.tipo.value
+      };
+
+      fetch(scriptURL, {
+        method: "POST",
+        body: JSON.stringify(formData)
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.status === "success") {
+          popup.classList.remove("hidden");
+          popup.classList.add("flex");
+          form.reset();
+        } else {
+          alert("Erro ao enviar inscrição. Tente novamente.");
+        }
+      })
+      .catch(err => alert("Erro de conexão: " + err));
+    });
+  </script>
+</body>
+</html>
